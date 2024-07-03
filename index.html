@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Quiz</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="quiz-container">
+      <div class="quiz-head">
+        <h1 class="quiz-title">Quiz Game</h1>
+        <div class="quiz-score flex">
+          Score :
+          <span id="correct-score">0 </span>/
+          <span class="total-question"></span>
+        </div>
+        <div class="number-question">
+          Question :
+          <span id="current-question-number">1</span> /
+          <span class="total-question"></span>
+        </div>
+      </div>
+      <div class="quiz-body">
+        <h2 class="quiz-question" id="question">
+          <!--What is the capital of Canada ?-->
+        </h2>
+        <ul class="quiz-options">
+          <li>
+            <input type="radio" name="answer" id="1" class="input-answer">
+            <label for="1" id="one-text" class="answer">Choice 1</label>
+          </li>
+          <li>
+            <input type="radio" name="answer" id="2" class="input-answer">
+            <label for="2" id="two-text" class="answer">Choice 2</label>
+          </li>
+          <li>
+            <input type="radio" name="answer" id="3" class="input-answer">
+            <label for="3" id="three-text" class="answer">Choice 3</label>
+          </li>
+          <li>
+            <input type="radio" name="answer" id="4" class="input-answer">
+            <label for="4" id="four-text" class="answer">Choice 4</label>
+          </li>
+        </ul>
+        <div id="result">
+
+        </div>
+      </div>
+      <div class="quiz-foot">
+        <button type="button" id="next">Next</button>
+      </div>
+    </div>
+  </div>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
